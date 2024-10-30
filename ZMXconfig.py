@@ -6,6 +6,19 @@ class BaseConfig():
     def __init__(self):
 
         ########################
+        ###### File paths ######
+        ########################
+
+        # Zemax file (recommended to use full path with r-string)
+        self.zemax_file = r'C:\full\path\to\my_zemax_file.zmx'
+
+        # Pupil coordinates to load for correcting wobble (comment if N/A)
+        # self.wobble_file = 'pupil_coords.npy'
+
+        # File to save raytracing output coordinates
+        self.pupil_file = 'pupil_wobble_data.npy'
+
+        ########################
         ### Zemax Parameters ###
         ########################
 
@@ -33,17 +46,3 @@ class BaseConfig():
         self.hx = 0                     # Leave normalized field coordinate 0
         self.hy = 0                     # Leave normalized field coordinate 0
         self.n_ring = 1                 # 1 for chief ray, n to trace n marginal rays (ring)
-
-
-        ########################
-        ###### File paths ######
-        ########################
-
-        # Zemax file
-        self.zemax_file = r'C:\full\path\to\my_zemax_file.zmx'
-
-        # Pupil coordinates to load for correcting wobble (comment if N/A)
-        # self.wobble_file = 'pupil_coords.npy'
-
-        # File to save raytracing output coordinates
-        self.pupil_file = 'pupil_wobble_data.npy'
