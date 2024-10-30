@@ -1,3 +1,8 @@
+python=3.10
 numpy
 pythonnet
 matplotlib
+
+# For data display
+ipykernel
+jupyter
