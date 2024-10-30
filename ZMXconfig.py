@@ -40,7 +40,7 @@ class BaseConfig():
         ########################
 
         # Zemax file
-        self.zemax_file = 'my_zemax_file.zmx'
+        self.zemax_file = r'C:\full\path\to\my_zemax_file.zmx'
 
         # Pupil coordinates to load for correcting wobble (comment if N/A)
         # self.wobble_file = 'pupil_coords.npy'
